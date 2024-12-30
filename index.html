@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="login overflow-auto vh-100">
+        <div class="container text-center mt-5 py-4 w-50">
+            <h2 class="text-white">Smart Login System</h2>
+            <input class="form-control my-2 d-none" type="text" placeholder="Enter your Name">
+            <input class="form-control my-2" type="email" placeholder="Enter your email">
+            <input class="form-control my-2" id="pass" type="password" placeholder="Enter your password">
+            <span class="py-0 text-nebety px-2 d-none">incorrect email or password</span>
+            <span class="py-0 text-nebety px-2 d-none" id="emptyvalid">All inputs must be filled</span>
+            <span class="py-0 text-white bg-success border-dark-subtle rounded px-2 d-none">Success</span>
+            <button value="Login" class="form-control  btn w-100"> Login</button>
+            <button value="sign" onclick="add()" class="form-control btn w-100 d-none"> Sign Up</button>
+            <h4 class="h6 text-white mt-3">Don't have account? <a href="" class=" text-white " id="signUplink">sign up</a> </h4>
+            <h4 class="h6 mt-3 text-white d-none">You have an account? <a href="" class="text-white  " id="signInlink">sign in</a> </h4>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
